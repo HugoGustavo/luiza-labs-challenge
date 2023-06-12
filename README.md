@@ -10,7 +10,7 @@ structures.
 
 ## Usage
 1. Clone the repository: git clone https://github.com/HugoGustavo/luiza-labs-challenge.git
-2. Navigate to the project directory: cd src
+2. Navigate to source directory: cd src
 3. Run the application: 
 
 ```
@@ -19,8 +19,8 @@ python Main.py [WORDS TO FIND]
 
 ## Testing
 1. Clone the repository: git clone https://github.com/HugoGustavo/luiza-labs-challenge.git
-2. Navigate to the project directory: cd test
-3. Run the application: 
+2. Navigate to test directory: cd test
+3. Run the tests: 
 
 ```
 python -m pytest .
