@@ -1,6 +1,9 @@
 import sys
+from os.path import dirname, realpath
+DIRECTORY = str(dirname(dirname((realpath(__file__)))))
+sys.path.insert(0, DIRECTORY)
 
-from controller.SearchEngineController import SearchEngineController
+from src.controller.SearchEngineController import SearchEngineController
 
 
 def main(words: list = []):

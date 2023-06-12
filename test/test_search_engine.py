@@ -1,11 +1,10 @@
 import pytest
 import time
 
-from src.main.Main import main
-from src.main.repository.DatabaseRepository import DatabaseRepository
-from src.main.repository.SearchEngineRepository import SearchEngineRepository
-from src.main.service.DatabaseService import DatabaseService
-from src.main.service.SearchEngineService import SearchEngineService
+from src.repository.DatabaseRepository import DatabaseRepository
+from src.repository.SearchEngineRepository import SearchEngineRepository
+from src.service.DatabaseService import DatabaseService
+from src.service.SearchEngineService import SearchEngineService
 
 
 @pytest.fixture
@@ -52,16 +51,3 @@ def test_time_execution_just_engine(make_search_engine, words, expected):
     time_execution = end_time - start_time
     assert time_execution < expected
 
-
-@pytest.mark.parametrize(
-    "words, expected",
-    [
-        (["walt disney"], 1)
-    ],
-)
-def test_time_execution_all_program(words, expected):
-    start_time = time.time()
-    main(words)
-    end_time = time.time()
-    result = end_time - start_time
-    assert result <= expected

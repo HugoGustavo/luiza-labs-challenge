@@ -1,8 +1,8 @@
-from repository.DatabaseRepository import DatabaseRepository
-from repository.SearchEngineRepository import SearchEngineRepository
-from service.DatabaseService import DatabaseService
-from service.SearchEngineService import SearchEngineService
-from view.SearchEngineView import SearchEngineView
+from src.repository.DatabaseRepository import DatabaseRepository
+from src.repository.SearchEngineRepository import SearchEngineRepository
+from src.service.DatabaseService import DatabaseService
+from src.service.SearchEngineService import SearchEngineService
+from src.view.SearchEngineView import SearchEngineView
 
 
 class SearchEngineController(object):

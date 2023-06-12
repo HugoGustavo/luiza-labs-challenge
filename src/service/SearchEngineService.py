@@ -1,4 +1,4 @@
-from model.SearchEngine import SearchEngine
+from src.model.SearchEngine import SearchEngine
 
 
 class SearchEngineService(object):
